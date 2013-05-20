@@ -33,15 +33,13 @@
         (tab-mark   ?\t   [?\xBB ?\t])
         ))
 
-;;補完入れると重い
-;; perl-completion
-;(add-hook  'cperl-mode-hook (lambda ()
-;                              (require 'auto-complete)
-;                              (require 'perl-completion)
-;                              (add-to-list 'ac-sources 'ac-source-perl-completion)
-;                              (perl-completion-mode t)))
-
-;; auto-complete ON
-;(require 'auto-complete)
-;(require 'auto-complete-config)
-;(global-auto-complete-mode t)
+;; ;;補完入れると重い
+;; ;;perl-completion
+;; (defvar ac-source-my-perl-completion
+;;   '((candidates . plcmp-ac-make-cands)))
+;; (defun my-cperl-mode-hook ()
+;;   (interactive)
+;;   (perl-completion-mode t)
+;;   (require 'auto-complete)
+;;   (add-to-list 'ac-sources 'ac-source-my-perl-completion))
+;; (add-hook 'cperl-mode-hook 'my-cperl-mode-hook)

@@ -2,7 +2,11 @@
 (add-hook 'csharp-mode-hook (lambda ()
                               (setq c-basic-offset 4
                                     tab-width 4
-                                    indent-tabs-mode t)))
+                                    indent-tabs-mode t
+                                    text-mode-hook 'turn-off-auto-fill
+                                    buffer-file-coding-system utf-8-with-signature-dos
+                                    )))
+
 (add-hook 'java-mode-hook (lambda () (setq tab-width 4)))
 (autoload 'csharp-mode "csharp-mode" "C# editing mode." t)
 (setq auto-mode-alist

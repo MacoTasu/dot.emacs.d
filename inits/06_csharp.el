@@ -19,4 +19,5 @@
                     ("\\.md$" . emacs-lisp-mode)
         ("\\.txt$" . text-mode)
         ("\\.cs$" . csharp-mode)
+        ("\\.faced$" . csharp-mode)
     ) auto-mode-alist ))

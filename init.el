@@ -21,3 +21,7 @@
 
 ; melpa.el
 (require 'melpa)
+(fset 'package-desc-vers 'package--ac-desc-version)
+
+;; 警告音もフラッシュも全て無効(警告音が完全に鳴らなくなるので注意)
+(setq ring-bell-function 'ignore)

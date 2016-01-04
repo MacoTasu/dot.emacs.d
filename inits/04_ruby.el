@@ -10,3 +10,6 @@
              (setq ruby-indent-level tab-width)
              (setq ruby-deep-indent-paren-style nil)
              (define-key ruby-mode-map [return] 'ruby-reindent-then-newline-and-indent)))
+
+(require 'rubocop)
+(add-hook 'ruby-mode-hook 'rubocop-mode)
